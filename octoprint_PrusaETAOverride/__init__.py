@@ -119,7 +119,7 @@ class PrusaetaoverridePlugin(octoprint.plugin.AssetPlugin):
             if "progress" in m:
                 progress = int(m["progress"])
                 if progress >= 0:
-                    self.set_progress(progress)
+                    #self.set_progress(progress)
                     self._logger.debug("Parsed progress update: {}%".format(progress))
 
             comm._sendCommand("M114")
